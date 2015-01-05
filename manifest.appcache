@@ -37,6 +37,7 @@ js/notifications.js
 js/polyfills.js
 js/urlutils.js
 content/script.js
+js/applait.finder.min.js
 
 #
 # Libraries
