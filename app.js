@@ -17,7 +17,8 @@ define([
   FilePicker,
   Library,
   Menu,
-  UrlUtils) {
+  UrlUtils,
+  Finder) {
 "use strict";
 
 var $ = id => document.getElementById(id);
@@ -281,10 +282,9 @@ $("menu_top_right_contents").addEventListener("click", event => {
 })();
 
 $("import").addEventListener("click", event => {
-  event.stopPropagation();
 
-  var finder = new Applait.Finder({ type: "sdcard", debugMode: true });
-  
+  var finder = new Finder({ type: "sdcard", debugMode: true });
+
 
 });
 

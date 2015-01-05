@@ -40,7 +40,7 @@
     }
   },
   "orientation": ["portrait-primary"],
-  "appcache_path": "/lector-dev/manifest.appcache"
+  "appcache_path": "/lector-dev/manifest.appcache",
 
   "permissions" : 
   {
