@@ -7,7 +7,8 @@ define([
   'js/filepicker',
   'js/library',
   'js/menu',
-  'js/urlutils'
+  'js/urlutils',
+  'js/applait.finder.min.js'
 ], function(_,
   Book,
   BookViewer,
@@ -278,6 +279,14 @@ $("menu_top_right_contents").addEventListener("click", event => {
     };
   });
 })();
+
+$("import").addEventListener("click", event => {
+  event.stopPropagation();
+
+  var finder = new Applait.Finder({ type: "sdcard", debugMode: true });
+  
+
+});
 
 if (Config.isExecutedLocally) {
   console.log("App", "version", "application executed locally");
