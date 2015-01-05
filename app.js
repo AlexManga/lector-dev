@@ -284,7 +284,7 @@ $("menu_top_right_contents").addEventListener("click", event => {
 $("import").addEventListener("click", event => {
 
   var finder = new Finder({ type: "sdcard", debugMode: true });
-
+  console.log("import function");
 
 });
 
